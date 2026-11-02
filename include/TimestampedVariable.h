@@ -271,8 +271,6 @@ public:
      */
     TimestampedVariable<T>& operator/=(const T& rhs) noexcept;
 
-	static constexpr TimestampedVariable UnusedValue = {0, 0};
-
 private:
     static bool IsZero(T val) {
         const T epsilon = 1e-6f;
